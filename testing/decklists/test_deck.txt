@@ -1,0 +1,102 @@
+1 Unctus, Grand Metatect (ONE) 75
+1 Aetherize (40K) 191
+1 Artificer Class (CLB) 663
+1 Ash Barrens (CLB) 880
+1 Bident of Thassa (PTHS) 42★ *F*
+1 Blustersquall (RTR) 30
+1 Buried Ruin (JMP) 491
+1 Burnished Hart (SCD) 260
+1 Codex Shredder (CMR) 304
+1 Counterbalance (SLD) 1220
+1 Curse of the Swine (KHC) 37
+1 Cyclonic Rift (RTR) 35
+1 Dig Through Time (KTK) 36
+1 Distant Memories (MBS) 24
+1 Dreamstone Hedron (CMR) 307
+1 Emry, Lurker of the Loch (NEC) 91
+1 Encroaching Mycosynth (ONE) 47
+1 Experimental Augury (ONE) 49
+1 Flow of Knowledge (BRO) 49
+1 Hedron Archive (MOC) 359
+1 Ichor Wellspring (BRC) 143
+1 Idol of Oblivion (ONC) 134
+1 Invasion of Vryn // Overloaded Mage-Ring (MOM) 64
+25 Island (J22) 101
+1 Jace, Architect of Thought (NEC) 93
+1 Liquimetal Coating (BRR) 28
+1 Lithoform Engine (BRC) 146
+1 Machine God's Effigy (BRC) 63
+1 Malcator's Watcher (ONE) 58
+1 Mask of Avacyn (CMR) 466
+1 Master Transmuter (BRC) 87
+1 Metalwork Colossus (BRC) 147
+1 Mind Stone (40K) 244
+1 Mirran Safehouse (ONE) 232
+1 Mirrodin Besieged (PLST) MH1-57
+1 Mirrorworks (BRC) 149
+1 Mnemonic Sphere (NEO) 64
+1 Muzzio, Visionary Architect (BRC) 89
+1 Mycosynth Wellspring (BRC) 150
+1 Negate (MOM) 68
+1 One with the Multiverse (PBRO) 59p
+1 Padeem, Consul of Innovation (BRC) 91
+1 Phyrexian Metamorph (2XM) 61
+1 Pithing Needle (MID) 257
+1 Platinum Emperion (SOM) 193
+1 Ponder (M12) 73
+1 Preordain (CMR) 84
+1 Prognostic Sphinx (AFC) 90
+1 Ratchet Bomb (M14) 215
+1 Realmbreaker, the Invasion Tree (MOM) 263
+1 Reliquary Tower (PLG20) 1 *F*
+1 Scavenged Brawler (BRC) 17
+1 Seat of the Synod (J22) 820
+1 Silver Myr (NEC) 158
+1 Smelting Vat (BRC) 18
+1 Sol Ring (PLST) CMD-261
+1 Spine of Ish Sah (MOC) 383
+1 Stoic Rebuttal (SOM) 46
+1 Stormtide Leviathan (M13) 70
+1 Strionic Resonator (MOC) 384
+1 Swiftfoot Boots (SCD) 279
+1 The Filigree Sylex (ONE) 227
+1 The Mycosynth Gardens (ONE) 256
+1 Thirst for Knowledge (JMP) 183
+1 Thought Vessel (PLG22) 2 *F*
+1 Thoughtcast (MOC) 242
+1 Thran Dynamo (PLST) IMA-230
+1 Trading Post (BRC) 169
+1 Traxos, Scourge of Kroog (DMC) 195
+1 Treasure Vault (AFR) 358
+1 Venser's Journal (C21) 273
+1 Voltaic Key (M11) 219
+1 Wayfarer's Bauble (CLB) 344
+1 Wondrous Crucible (BRC) 67
+1 Workshop Elders (BRC) 102
+1 Wurmcoil Engine (BRR) 63
+
+SIDEBOARD:
+1 Arcane Signet (ELD) 331
+1 Chief Engineer (M15) 47
+1 Darksteel Citadel (DDU) 65
+1 Etherium Sculptor (ALA) 42
+1 Everflowing Chalice (DDF) 60
+1 Fabricate (PLIST) 58
+1 Foundry Inspector (PLST) KLD-215
+1 Gilded Lotus (BRR) 80
+1 Grand Architect (PLST) SOM-33 *F*
+1 Liberator, Urza's Battlethopter (BRO) 237
+1 Master of Etherium (2XM) 57
+1 Myr Retriever (2XM) 277
+1 Ornithopter of Paradise (MH2) 430
+1 Palladium Myr (IMA) 224
+1 Pongify (C14) 120
+1 Sai, Master Thopterist (NEC) 97
+1 Sculpting Steel (MOC) 374
+1 Shimmer Myr (CMR) 339
+1 Sky Diamond (C14) 269
+1 Spellskite (CLB) 873
+1 Tezzeret the Seeker (DDF) 39 *F*
+1 Thought Monitor (MH2) 71
+1 Treasure Cruise (PLST) KTK-59
+1 Unwinding Clock (C18) 228
