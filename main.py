@@ -5,9 +5,8 @@ from card import Card
 def main():
     # Fetch decklist
     deck = Decklist(TEST_DECK_PATH)
-    print(deck.get_decklist())
+    print(deck.get_decklist()[0]["name"])
 
-    # build card objects
     # create text prompts
     # load image generator model
     # dispatch to image generator

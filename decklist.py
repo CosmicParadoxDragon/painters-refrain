@@ -26,7 +26,7 @@ class Decklist:
 
                 name_list = post_split[1:set_tag_index]
                 card_name = " ".join(name_list)
-                self.cards.append(card_name)
+                self.cards.append(Card(card_name))
 
     def get_decklist(self):
         return self.cards

@@ -11,8 +11,8 @@ class Card():
     def fetch_infomation(self):
         name = self.name
         split_name = "+".join(map(lambda x: x, name.split()))
-        self.info_block = requests.get(SCRYFALL_URL + split_name)
+        self.info_block = requests.get(SCRYFALL_URL + split_name).json()
 
     def get_card(self ):
-        return self.info_block.json()['name']
+        return self.info_block['name']
 
