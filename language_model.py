@@ -1,40 +1,59 @@
 from langchain_ollama import OllamaLLM
 from langchain_core.messages import SystemMessage, HumanMessage
 from card import Card
-import os 
+from breakdowntext import generate_mtg_image_prompt_from_scryfall as img_gen_prompt
+import os
 from pathlib import Path
-
+ 
 llm = OllamaLLM(model="dolphin3")
 
-character = "little blonde girl, 11 years old"
-style_input = "Gothic Lolita"
+character = "little blonde girl"
+style_input = "lewd art"
 card_name = "Faerie Mastermind"
 test_card = Card(card_name)
 type_line = test_card.info_block['type_line']
 oracle_text = test_card.info_block['oracle_text']
 
-print(f"Name: {card_name}\nType Line: {type_line}\nOracle Text: {oracle_text}")
-
-"""
-first_generation = llm.invoke(f"Create an image generation prompt for an image called {card_name}." +
-                              f"The image is for a card that depicts a {type_line}, as a final detail " +
-                              f"the card does the following use that to inform the artwork {oracle_text}." +
-                              f"The prompt should in the form of a comma seperated list, in a plain text paragraph.")
-print(first_generation)
-
-
-define_response = llm.invoke(f"Define the phrase {card_name} using short statements serperated by commas.")
-style_breakdown_character = llm.invoke(f"Generate the quintessential features of {style_input} as it relates to characters.")
-style_breakdown_scene = llm.invoke(f"Generate the breakdown of the style {style_input} as it relates to everything except characters.")
-
-second_generation = llm.invoke(f"Transform this image generation prompt {first_generation} by adding, and changing details so" +
-                               f"the style is {style_input} style. Making the character become {character} as a {type_line}" +
-                               f" combining them together.  The background should be transformed becoming more {style_breakdown_scene}.")
-print(second_generation)
-"""
 messages = [
-    SystemMessage(f"Image Generation Prompt Creator"),
-    HumanMessage(f"{style_input} {character} as a {card_name}, doing {oracle_text}")
+    SystemMessage( f"""
+        Output should be in the form of a paragraph of short descriptive image tags, incomplete setances; noun or descriptive adjective noun"),
+        Be descriptive: Include details about colors, shapes, objects, and composition. Provide additional context,
+        Create an image generation prompt for an image based on the phrase {card_name} and on actions {oracle_text}.
+        The main focus is a {type_line} {style_input} {character}.
+        """ ),
+    HumanMessage(  f"Generate tags." )
 ]
-prompt = llm.invoke(messages)
-print(prompt)
+
+"""
+first_generation = llm.invoke( messages )
+print(first_generation)
+"""
+
+messages = [
+    SystemMessage(
+        """
+        General Guidelines:
+            You are a bot build to take in a magic the gathering card name, effect, types
+            as well as maybe a character description and a style prompt, and blend elements of 
+            all those inputs into a image generation prompt.
+        Response Guidelines:
+            Structure: The response should be a unordered list of descriptive statements
+            Descriptive: Use vivid detailed descriptions
+            Complete: The description of the scene should be complete and address all details
+            The inputs: phrase: is the name of the card the artwork is for; description: is the oracle text, or abilities and effects of the
+            card that the image is for, they should be used to inform that final generation.  
+
+            Example Output:
+            sexy young blonde girl, sevelte body, medium breasts, flawless body, blue color palette, {depth of field,blurry foreground, contrast, backlighting}, glowing eyes,
+        """),
+    SystemMessage(f"Combine the inputs into an image generation prompt based on the phrase {card_name} and the decription: {oracle_text}"),
+    HumanMessage( f"{character} {type_line} {style_input}")
+]
+
+
+second_generation = llm.invoke( messages )
+print( second_generation )
+
+
+# print(img_gen_prompt(test_card.info_block))
+
